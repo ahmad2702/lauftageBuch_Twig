@@ -1,0 +1,8 @@
+{
+    "name": "tracker/website",
+    "description": "New Tracker website",
+    "type": "project",
+    "require": {
+        "php": "^7.0"
+    }
+}
