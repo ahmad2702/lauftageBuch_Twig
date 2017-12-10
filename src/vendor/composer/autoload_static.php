@@ -14,6 +14,7 @@ class ComposerStaticInit772a8e022df7d78697cffdd213bd9ac0
         'T' => 
         array (
             'Twig\\' => 5,
+            'Tracker\\' => 8,
         ),
         'S' => 
         array (
@@ -25,6 +26,10 @@ class ComposerStaticInit772a8e022df7d78697cffdd213bd9ac0
         'Twig\\' => 
         array (
             0 => __DIR__ . '/..' . '/twig/twig/src',
+        ),
+        'Tracker\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/classes',
         ),
         'Symfony\\Polyfill\\Mbstring\\' => 
         array (

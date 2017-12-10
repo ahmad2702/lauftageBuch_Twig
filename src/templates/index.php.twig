@@ -7,22 +7,31 @@
         <h1 style="text-align: center;">Deine Tracks</h1>
     </div>
 
-    <div class="trackerLine">
-        <div class="trackerDatum">
+    {% for i in lines %}
 
+        <div class="trackerLine">
+            <div class="trackerDatum">
+                {{ i.getDay() }}
+            </div>
+
+            <div class="trackerStrecke">
+                {{ i.getStrecke() }}
+            </div>
+
+            <div class="trackerZeit">
+                {{ i.getZeit() }}
+            </div>
+
+            <div class="trackerSpeed">
+                {{ i.getSpeed() }}
+            </div>
+
+            <div class="trackerRemove">
+                remove
+            </div>
         </div>
+    {% endfor %}
 
-        <div class="trackerStrecke">
 
-        </div>
-
-        <div class="trackerZeit">
-
-        </div>
-
-        <div class="trackerRemove">
-
-        </div>
-    </div>
 
 {% endblock %}
