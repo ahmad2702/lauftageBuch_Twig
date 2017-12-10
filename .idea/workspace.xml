@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e26bc1b-ff92-4f44-b0fe-d4aee52c7c85" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/web/_footer.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/web/_middleAddForm.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/web/_middleList.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/web/_navbar.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/web/add.php" afterPath="$PROJECT_DIR$/src/web/add.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/web/index.php" afterPath="$PROJECT_DIR$/src/web/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/templates/base.php.twig" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/templates/_middleAddForm.php.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/templates/_middleList.php.twig" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/_navbar.php.twig" afterPath="$PROJECT_DIR$/src/templates/_navbar.php.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/add.php.twig" afterPath="$PROJECT_DIR$/src/templates/add.php.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/index.php.twig" afterPath="$PROJECT_DIR$/src/templates/index.php.twig" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -50,10 +51,11 @@
         <option value="$PROJECT_DIR$/src/web/css/add.php" />
         <option value="$PROJECT_DIR$/src/web/_addForm.php" />
         <option value="$PROJECT_DIR$/src/web/_navbar.php" />
-        <option value="$PROJECT_DIR$/src/templates/index.php.twig" />
-        <option value="$PROJECT_DIR$/src/templates/add.php.twig" />
         <option value="$PROJECT_DIR$/src/web/index.php" />
         <option value="$PROJECT_DIR$/src/web/add.php" />
+        <option value="$PROJECT_DIR$/src/templates/base.php.twig" />
+        <option value="$PROJECT_DIR$/src/templates/index.php.twig" />
+        <option value="$PROJECT_DIR$/src/templates/add.php.twig" />
         <option value="$PROJECT_DIR$/src/templates/_navbar.php.twig" />
       </list>
     </option>
@@ -152,12 +154,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1512909128710</updated>
-      <workItem from="1512909131522" duration="5930000" />
+      <workItem from="1512909131522" duration="7367000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5930000" />
+    <option name="totallyTimeSpent" value="7367000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="53" y="22" width="1627" height="1028" extended-state="6" />
@@ -258,14 +260,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/add.php.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="43" column="22" lean-forward="true" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/web/add.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -274,18 +268,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/base.php.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/_middleList.php.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="20" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/index.php.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="27" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/_middleAddForm.php.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="41" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/add.php.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/_navbar.php.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="17" lean-forward="true" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+        <state relative-caret-position="195">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding />
         </state>
       </provider>
