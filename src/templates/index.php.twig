@@ -1,6 +1,5 @@
 {% extends "base.php.twig" %}
 
-
 {% block content %}
 
     <div class="page-header">
@@ -15,7 +14,7 @@
             </div>
 
             <div class="trackerStrecke">
-                {{ i.getStrecke() }}
+                {{ i.getStrecke() }} km
             </div>
 
             <div class="trackerZeit">
@@ -27,10 +26,38 @@
             </div>
 
             <div class="trackerRemove">
-                remove
+                <form method="post" action="functions/remove_element.php">
+                    <input type="hidden" value="{{ i.getId() }}" name="id">
+                    <input type="submit" value="remove" name="removeForm">
+                </form>
             </div>
         </div>
     {% endfor %}
+
+
+    <div class="trennLinie"></div>
+
+    <div class="trackerLine">
+        <div class="trackerDatum">
+            {{ lines|length }}
+        </div>
+
+        <div class="trackerStrecke">
+            {{ lines|length }}
+        </div>
+
+        <div class="trackerZeit">
+            {{ lines|length }}
+        </div>
+
+        <div class="trackerSpeed">
+            -
+        </div>
+
+        <div class="trackerRemove">
+            -
+        </div>
+    </div>
 
 
 

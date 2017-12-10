@@ -27,6 +27,15 @@ class TrackerLine
         $this->zeit = $zeit;
     }
 
+
+    /**
+     * @return mixed
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
     /**
      * @return mixed
      */

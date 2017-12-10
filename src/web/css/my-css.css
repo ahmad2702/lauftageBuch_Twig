@@ -65,11 +65,13 @@ body > .web-element {
     margin: 30px auto;
     width: 1000px;
     height: 50px;
+    text-align: center;
 }
 
 .trackerDatum{
     width: 200px;
     height: 50px;
+    padding-top: 15px;
     background-color: whitesmoke;
     float: left;
 }
@@ -77,12 +79,14 @@ body > .web-element {
 .trackerStrecke{
     width: 200px;
     height: 50px;
+    padding-top: 15px;
     background-color: aqua;
     float: left;
 }
 .trackerZeit{
     width: 200px;
     height: 50px;
+    padding-top: 15px;
     background-color: aquamarine;
     float: left;
 }
@@ -90,12 +94,21 @@ body > .web-element {
 .trackerSpeed{
     width: 200px;
     height: 50px;
+    padding-top: 15px;
     background-color: #ddffdd;
     float: left;
 }
 .trackerRemove{
     width: 200px;
     height: 50px;
+    padding-top: 15px;
     background-color: blanchedalmond;
     float: left;
+}
+.trennLinie {
+    margin: 30px auto;
+    width: 1000px;
+    height: 5px;
+    background-color: brown;
+
 }
