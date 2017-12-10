@@ -2,12 +2,23 @@
 
 namespace Tracker;
 
-
+/**
+ * @Entity
+ */
 class TrackerLine
 {
+    /** @Id @Column(type="integer") @GeneratedValue  */
+    private $id;
+
+    /** @Column(type="string") **/
     private $day;
+
+    /** @Column(type="string") **/
     private $strecke;
+
+    /** @Column(type="string") **/
     private $zeit;
+
     private $speed;
 
 
