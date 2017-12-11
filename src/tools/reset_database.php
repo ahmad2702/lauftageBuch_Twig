@@ -5,9 +5,9 @@ use Tracker\TrackerLine;
 require_once __DIR__ . '/../bootstrap.php';
 
 $lines = array(
-    new TrackerLine("2013-11-11", "120", "23"),
-    new TrackerLine("2015-05-15", "525", "55"),
-    new TrackerLine("2017-03-13", "1000", "4"),
+    new TrackerLine(new DateTime("2013-11-11"), "120", "23"),
+    new TrackerLine(new DateTime("2015-05-15"), "525", "55"),
+    new TrackerLine(new DateTime("2017-03-13"), "1000", "4"),
 
 );
 

@@ -6,7 +6,7 @@ require_once __DIR__ . '/../../bootstrap.php';
 
 
 if(isset($_POST[addForm])){
-    $datum = $_POST['datum'];
+    $datum = new DateTime($_POST['datum']);
     $strecke = $_POST['strecke'];
     $zeit = $_POST['zeit'];
     $lines = array(new TrackerLine($datum, $strecke, $zeit));

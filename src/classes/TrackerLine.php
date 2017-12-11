@@ -10,13 +10,13 @@ class TrackerLine
     /** @Id @Column(type="integer") @GeneratedValue  */
     private $id;
 
-    /** @Column(type="string") **/
+    /** @Column(type="date") **/
     private $day;
 
-    /** @Column(type="string") **/
+    /** @Column(type="float") **/
     private $strecke;
 
-    /** @Column(type="string") **/
+    /** @Column(type="float") **/
     private $zeit;
 
 
@@ -41,7 +41,7 @@ class TrackerLine
      */
     public function getDay()
     {
-        return $this->day;
+        return $this->day->format('d.m.Y');
     }
 
     /**
