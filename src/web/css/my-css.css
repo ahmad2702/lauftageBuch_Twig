@@ -112,3 +112,11 @@ body > .web-element {
     background-color: brown;
 
 }
+
+.noLinesFound{
+    margin: 30px auto;
+    width: 1000px;
+    height: 300px;
+    text-align: center;
+    font-size: 20px;
+}

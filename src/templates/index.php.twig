@@ -6,59 +6,69 @@
         <h1 style="text-align: center;">Deine Tracks</h1>
     </div>
 
-    {% for i in lines %}
+    {% if (lines|length) == 0 %}
+
+        <div class="noLinesFound">
+            Die Liste ist noch leer. <br>
+            Bitte oben auf ADD klicken!
+        </div>
+
+    {% else %}
+
+        {% for i in lines %}
+
+            <div class="trackerLine">
+                <div class="trackerDatum">
+                    {{ i.getDay() }}
+                </div>
+
+                <div class="trackerStrecke">
+                    {{ i.getStrecke() }} km
+                </div>
+
+                <div class="trackerZeit">
+                    {{ i.getZeit() }}
+                </div>
+
+                <div class="trackerSpeed">
+                    {{ i.getSpeed() }}
+                </div>
+
+                <div class="trackerRemove">
+                    <form method="post" action="functions/remove_element.php">
+                        <input type="hidden" value="{{ i.getId() }}" name="id">
+                        <input type="submit" value="remove" name="removeForm">
+                    </form>
+                </div>
+            </div>
+        {% endfor %}
+
+
+        <div class="trennLinie"></div>
 
         <div class="trackerLine">
             <div class="trackerDatum">
-                {{ i.getDay() }}
+                {{ lines|length }}
             </div>
 
             <div class="trackerStrecke">
-                {{ i.getStrecke() }} km
+                {{ lines|length }}
             </div>
 
             <div class="trackerZeit">
-                {{ i.getZeit() }}
+                {{ lines|length }}
             </div>
 
             <div class="trackerSpeed">
-                {{ i.getSpeed() }}
+                -
             </div>
 
             <div class="trackerRemove">
-                <form method="post" action="functions/remove_element.php">
-                    <input type="hidden" value="{{ i.getId() }}" name="id">
-                    <input type="submit" value="remove" name="removeForm">
-                </form>
+                -
             </div>
         </div>
-    {% endfor %}
 
-
-    <div class="trennLinie"></div>
-
-    <div class="trackerLine">
-        <div class="trackerDatum">
-            {{ lines|length }}
-        </div>
-
-        <div class="trackerStrecke">
-            {{ lines|length }}
-        </div>
-
-        <div class="trackerZeit">
-            {{ lines|length }}
-        </div>
-
-        <div class="trackerSpeed">
-            -
-        </div>
-
-        <div class="trackerRemove">
-            -
-        </div>
-    </div>
-
+     {% endif %}
 
 
 {% endblock %}
