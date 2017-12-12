@@ -15,17 +15,17 @@ if(isset($_POST[addForm])){
     $strecke = trim(strip_tags($_POST['strecke']));
     $zeit = trim(strip_tags($_POST['zeit']));
 
-    if(strtotime($datum) == FALSE){
+    if(strtotime($datum) == FALSE or strtotime($datum)>strtotime(date('Y-m-d').' 00:00:00')){
         $error_datum = "datum f -";
         $datum = "";
     }
 
-    if(is_numeric($strecke)==FALSE){
+    if(is_numeric($strecke)==FALSE or $strecke<0 or $strecke==0){
         $error_strecke = "strecke f -";
         $strecke = "";
     }
 
-    if(strtotime("1970-01-01 ".$zeit) == FALSE){
+    if(strtotime("1970-01-01 ".$zeit) == FALSE or strtotime("1970-01-01 ".$zeit)<0 or strtotime("1970-01-01 ".$zeit) ==0){
         $error_zeit = "zeit f -";
         $zeit = "";
     }
@@ -40,7 +40,7 @@ if(isset($_POST[addForm])){
         }
         $entityManager->flush();
 
-        header('Location: ../');
+        header('Location: ../details.php');
     }
 
 

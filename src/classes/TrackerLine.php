@@ -65,7 +65,7 @@ class TrackerLine
      */
     public function getSpeed()
     {
-        return ($this->strecke)/($this->zeit);
+        return ($this->strecke * 1000)/($this->zeit);
     }
 
 
