@@ -14,7 +14,7 @@ if(isset($_POST[removeForm])){
 
 }
 
-header('Location: ../');
+header('Location: ../details.php');
 
 
 

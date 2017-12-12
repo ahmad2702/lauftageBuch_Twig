@@ -2,8 +2,6 @@
 // Gemeinsame genutzte Dinge sind dorthin ausgelagert
 require_once '../bootstrap.php';
 
-//require_once '../tools/reset_database.php';
-
 //Ladet alle Daten aus DB
 $all = $entityManager->getRepository('Tracker\TrackerLine')->findBy([], ['day' => 'ASC']);
 

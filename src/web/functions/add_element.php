@@ -33,6 +33,13 @@ if(isset($_POST[addForm])){
 
 
     if($error_datum=="" and $error_strecke == "" and $error_zeit == ""){
+
+        $findElement = $entityManager->getRepository('Tracker\TrackerLine')->findOneBy(['day' => new DateTime($datum)]);
+        if($findElement != null){
+            $entityManager->remove($findElement);
+        }
+
+
         $lines = array(new TrackerLine(new DateTime($datum), $strecke, strtotime("1970-01-01 ".$zeit)));
 
         foreach($lines as $line) {
