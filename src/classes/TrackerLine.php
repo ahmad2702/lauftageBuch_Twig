@@ -41,7 +41,7 @@ class TrackerLine
      */
     public function getDay()
     {
-        return $this->day->format('d.m.Y');
+        return $this->day->format('d.m.Y H:i:s');
     }
 
     /**

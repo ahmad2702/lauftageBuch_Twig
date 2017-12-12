@@ -76,6 +76,14 @@ body > .web-element {
     float: left;
 }
 
+.trackerDatum1{
+    width: 200px;
+    height: 50px;
+
+    background-color: whitesmoke;
+    float: left;
+}
+
 .trackerStrecke{
     width: 200px;
     height: 50px;
