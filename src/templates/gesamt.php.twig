@@ -1,0 +1,60 @@
+{% extends "base.php.twig" %}
+
+{% block content %}
+
+    <div class="page-header">
+        <h1 style="text-align: center;">Deine Tracks</h1>
+    </div>
+
+    {% if (lines|length) == 0 %}
+
+        <div class="noLinesFound">
+            Datenbank ist noch leer. <br>
+            Bitte oben auf ADD klicken!
+        </div>
+
+    {% else %}
+
+        {% set gesamtK=0 %}
+        {% set gesamtZ=0 %}
+
+        {% for i in lines %}
+
+                    {% set gesamtK=gesamtK+i.getStrecke() %}
+
+                    {% set gesamtZ=gesamtZ+i.getZeit() %}
+
+
+        {% endfor %}
+
+
+        <div class="trennLinie"></div>
+
+        <div class="trackerLine">
+            <div class="trackerDatum1">
+                Anzahl der Lauftage: {{ lines|length }} <br>
+
+                Gesamttage: {{ ((last.getDay() | date('U'))-(first.getDay() | date('U')))/86400 }}
+            </div>
+
+            <div class="trackerStrecke">
+                {{ gesamtK }} km
+            </div>
+
+            <div class="trackerZeit">
+                {{ gesamtZ }} s
+            </div>
+
+            <div class="trackerSpeed">
+                -
+            </div>
+
+            <div class="trackerRemove">
+                -
+            </div>
+        </div>
+
+    {% endif %}
+
+
+{% endblock %}

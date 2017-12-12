@@ -49,31 +49,6 @@
         {% endfor %}
 
 
-        <div class="trennLinie"></div>
-
-        <div class="trackerLine">
-            <div class="trackerDatum1">
-                Anzahl der Lauftage: {{ lines|length }} <br>
-
-                Gesamttage: {{ ((last.getDay() | date('U'))-(first.getDay() | date('U')))/86400 }}
-            </div>
-
-            <div class="trackerStrecke">
-                {{ gesamtK }} km
-            </div>
-
-            <div class="trackerZeit">
-                {{ gesamtZ }} s
-            </div>
-
-            <div class="trackerSpeed">
-                -
-            </div>
-
-            <div class="trackerRemove">
-                -
-            </div>
-        </div>
 
      {% endif %}
 
