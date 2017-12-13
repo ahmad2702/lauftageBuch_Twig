@@ -16,17 +16,17 @@ if(isset($_POST[addForm])){
     $zeit = trim(strip_tags($_POST['zeit']));
 
     if(strtotime($datum) == FALSE or strtotime($datum)>strtotime(date('Y-m-d').' 00:00:00')){
-        $error_datum = "datum f -";
+        $error_datum = "Error: Datum leer oder nicht korrekt!";
         $datum = "";
     }
 
     if(is_numeric($strecke)==FALSE or $strecke<0 or $strecke==0){
-        $error_strecke = "strecke f -";
+        $error_strecke = "Error: Laufstrecke leer oder nicht korrekt!";
         $strecke = "";
     }
 
     if(strtotime("1970-01-01 ".$zeit) == FALSE or strtotime("1970-01-01 ".$zeit)<0 or strtotime("1970-01-01 ".$zeit) ==0){
-        $error_zeit = "zeit f -";
+        $error_zeit = "Error: Laufzeit leer oder nicht korrekt!";
         $zeit = "";
     }
 

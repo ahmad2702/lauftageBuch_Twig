@@ -3,7 +3,7 @@
 {% block content %}
 
     <div class="page-header">
-        <h1 style="text-align: center;">Deine Tracks</h1>
+        <h1 style="text-align: center;">Detailansicht</h1>
     </div>
 
     {% if (lines|length) == 0 %}
@@ -42,7 +42,7 @@
                 <div class="trackerRemove">
                     <form method="post" action="functions/remove_element.php">
                         <input type="hidden" value="{{ i.getId() }}" name="id">
-                        <input type="submit" value="remove" name="removeForm">
+                        <input type="submit" value="löschen" name="removeForm">
                     </form>
                 </div>
             </div>

@@ -44,6 +44,7 @@ body > .web-element {
 
 
 .middle-block {
+    margin-bottom: 100px;
     padding-left: 15px;
     padding-right: 15px;
 }

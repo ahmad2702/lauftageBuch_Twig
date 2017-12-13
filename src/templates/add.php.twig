@@ -5,7 +5,7 @@
 {% block content %}
 
     <div class="page-header">
-        <h1 align='center'>Add new track info</h1>
+        <h1 align='center'>Neuen Eintrag hinzufügen:</h1>
     </div>
 
     <form class="form-horizontal" action="" method="post">
@@ -16,14 +16,16 @@
                 <label class="col-md-3 control-label" for="datum">DATUM:</label>
                 <div class="col-md-6">
                     <input id="name" name="datum" type="date" placeholder="JJJJ-MM-TT" class="form-control" value="{{ datum }}">
+                    <span style="color: red;">{{ error_datum }}</span>
                 </div>
             </div>
 
             <!-- Strecke-->
             <div class="form-group">
-                <label class="col-md-3 control-label" for="strecke">STRECKE:</label>
+                <label class="col-md-3 control-label" for="strecke">STRECKE (km):</label>
                 <div class="col-md-6">
                     <input id="email" name="strecke" type="text" placeholder="nn / nn.n" class="form-control" value="{{ strecke }}">
+                    <span style="color: red;">{{ error_strecke }}</span>
                 </div>
             </div>
 
@@ -32,6 +34,7 @@
                 <label class="col-md-3 control-label" for="zeit">ZEIT:</label>
                 <div class="col-md-6">
                     <input id="email" name="zeit" type="text" placeholder="hh:mm:ss" class="form-control" value="{{ zeit }}">
+                    <span style="color: red;">{{ error_zeit }}</span>
                 </div>
             </div>
 
@@ -40,16 +43,6 @@
             <div class="form-group">
                 <div class="col-md-9 text-right">
                     <input type="submit" class="btn btn-primary btn-lg" name="addForm" value="ADD"></input>
-                </div>
-            </div>
-
-            <!-- Error-->
-            <div class="form-group">
-                <div class="col-md-6">
-                    {{ leer_form }}
-                    {{ error_datum }}
-                    {{ error_strecke }}
-                    {{ error_zeit }}
                 </div>
             </div>
 
